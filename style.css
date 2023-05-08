@@ -537,7 +537,7 @@ textarea:focus {
 
 .grafika_kontakt {
   position: absolute;
-  top: 70rem;
+  top: 100rem;
   right: 0;
   right: 250px;
  
@@ -928,5 +928,75 @@ textarea:focus {
 
       #faq p {
         margin-left: 0;
+      }
+    }
+
+    .container-feature {
+      display: flex;
+      margin-left: 22rem;
+      margin-top: 2rem;
+    }
+  
+    .feature,
+    .feature-1,
+    .feature-2,
+    .feature-3 {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      max-width: 40%;
+    }
+  
+    .feature p,
+    .feature-1 p,
+    .feature-2 p,
+    .feature-3 p {
+      max-width: 70%;
+      height: auto;
+    }
+
+    .features h1 {
+      margin-left: 22rem; 
+      margin-top: 10rem;
+    }
+
+    @media screen and (max-width: 768px) {
+      .container-feature {
+        flex-direction: column;
+      }
+
+      .feature,
+      .feature-1,
+      .feature-2,
+      .feature-3 {
+        max-width: 100%;
+      }
+
+      .feature p,
+      .feature-1 p,
+      .feature-2 p,
+      .feature-3 p {
+        max-width: 100%;
+      }
+
+      .iamge_feture {
+        width: 100%;
+      }
+      .feature_h1 {
+        margin: auto;
+        text-align: center;
+      }
+
+      .features h1 {
+        margin: auto;
+        text-align: center;
+        margin-top: 10rem;
+      }
+    }
+
+    @media screen and (max-width: 1000px) {
+      .container-feature {
+        flex-direction: column;
+        margin: auto;
       }
     }
