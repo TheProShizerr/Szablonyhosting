@@ -724,8 +724,11 @@ textarea:focus {
         justify-content: center;
       }
 
-      .text_footer {
-        display: none;
+      @media (max-width: 768px) {
+        .text_footer {
+          margin: 0 auto;
+          text-align: center;
+        }
       }
 
       .text_mobile {
@@ -994,6 +997,8 @@ textarea:focus {
         text-align: center;
         margin-top: 10rem;
       }
+
+    
     }
 
     @media screen and (max-width: 1000px) {
