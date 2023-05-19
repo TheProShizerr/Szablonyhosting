@@ -1,0 +1,13 @@
+{
+    "cleanUrls": true,
+    "rewrites": [
+      {
+        "source": "/index",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/maszyny",
+        "destination": "/maszyny.html"
+      }
+    ]
+  }
