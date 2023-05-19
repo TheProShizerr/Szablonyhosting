@@ -166,17 +166,7 @@ html {
   position: relative;
 }
 
-@media (max-width: 900px) {
-  .container-oferta h1 {
-    position: relative;
-    top: -2rem;
-  }
 
-  .text-p {
-    position: relative;
-    top: -1rem;
-  }
-}
 
 .boxy {
   display: flex;
@@ -197,7 +187,24 @@ html {
     .text-p {
       text-align: center;
       margin: auto;
+      position: relative;
+    top: -1rem;
     }
+  }
+
+  @media (max-width: 980px) {
+    .container-oferta h1 {
+      margin: 0 auto;
+      position: relative;
+      top: -2rem;
+    }
+    .text-p {
+      text-align: center;
+      margin: auto;
+      position: relative;
+    top: -1rem;
+    }
+
   }
 
   
