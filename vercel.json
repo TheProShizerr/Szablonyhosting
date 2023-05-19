@@ -6,8 +6,8 @@
         "destination": "/index.html"
       },
       {
-        "source": "/maszyny",
-        "destination": "/maszyny.html"
+        "source": "/partnership",
+        "destination": "/partnership.html"
       }
     ]
   }

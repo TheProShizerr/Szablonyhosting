@@ -158,10 +158,24 @@ html {
   font-weight: 800;
   margin-top: 2rem;
   margin-right: 53rem;
+
 }
 
 .text-p {
   margin-right: 18.5rem;
+  position: relative;
+}
+
+@media (max-width: 900px) {
+  .container-oferta h1 {
+    position: relative;
+    top: -2rem;
+  }
+
+  .text-p {
+    position: relative;
+    top: -1rem;
+  }
 }
 
 .boxy {
@@ -170,7 +184,7 @@ html {
   gap: 1rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 930px) {
   .boxy {
     flex-direction: column;
   }
