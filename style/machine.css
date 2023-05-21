@@ -466,6 +466,68 @@ html {
   }
 }
 
+swiper-container {
+  width: 50%;
+  height: 50%;
+}
+
+swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 
+.text_oferta {
+  margin-top: 15rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.text_oferta p {
+  margin-top: -1rem;
+  margin-right: 18.5rem;
+}
+
+.text_oferta h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-top: 2rem;
+  margin-right: 31rem;
+}
+
+@media (max-width: 768px) {
+  .text_oferta {
+    margin-top: 5rem;
+  }
+
+  .text_oferta h1 {
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    top: -2rem;
+  }
+
+  .text_oferta p {
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    top: -1rem;
+  }
+  swiper-container {
+    width: 90%;
+    height: 90%;
+  }
+
+}

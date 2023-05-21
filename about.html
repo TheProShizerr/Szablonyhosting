@@ -1,0 +1,69 @@
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+  <link rel="stylesheet" href="style/about.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+</head>
+<body>
+  <header>
+    <div class="header__content">
+      <div class="header__logo">
+        <a href="index.html">
+          <img src="https://cdn.discordapp.com/attachments/1100484541388435628/1102344094874882098/obraz_2023-04-30_232134258_preview_rev_1.png" alt="logo" class="logo" data-aos="zoom-in-right">
+        </a>
+      </div>
+      <nav class="header__nav">
+        <ul>
+          <li class="header__nav-item">
+            <span>Strona Główna</span>
+          </li>
+          <li class="header__nav-item">
+            <span>Współpraca</span>
+          <li class="header__nav-item">
+            <span>Portfolio</span>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="my-slider">
+    <div><img src="https://cdn.discordapp.com/attachments/1100484541388435628/1109891961474777108/obraz_2023-05-21_191350562.png">
+      <div class="container_slider-tekst">
+        <h1>test</h1>
+      </div>
+    </div>
+    <div><img src="https://cdn.discordapp.com/attachments/1100484541388435628/1109581474597969920/1525509761_410587.png">
+    </div>
+    <div><img src="https://cdn.discordapp.com/attachments/1100484541388435628/1109775747456970855/hL1XKZJB8GvI2X0qMipv1GFdr2mTXykq.png"></div>
+  </div>
+  <div class="container-slider-text">
+ <div class="slider-text">
+  <h1>Masz pytania?</h1>
+  <p>NAPISZ DO NAS</p>
+  </div>
+  
+</div>
+ </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var slider = tns({
+        container: '.my-slider',
+        items: 1,
+        slideBy: 'page',
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplayButtonOutput: false,
+        controls: false,
+        nav: false,
+        mouseDrag: true,
+        
+      });
+    });
+  </script>
+</body>
+</html>
