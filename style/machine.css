@@ -340,9 +340,7 @@ html {
   margin-top: 5rem;
 }
 
-.container-text h3 {
-  display: none;
-}
+
 
 @media (max-width: 768px) {
   .container-text p {
@@ -355,17 +353,6 @@ html {
   .container-text h1 {
     font-size: 2rem;
   }
-
-  .container-text h3 {
-    display: block;
-    text-align: center;
-    margin-top: 5rem;
-  }
-
-  .container-text h1 {
-    display: none;
-  }
-
 
   .container-text {
     align-items: right;
@@ -400,9 +387,9 @@ html {
     margin: 0 auto;
   }
 
-  .container-text h1, h2 {
+  .container-text h1 {
     text-align: center;
-    font-size: 1rem;
+    font-size: 2rem;
   }
 
   .container-text h2 {
@@ -459,7 +446,7 @@ html {
   margin-left: 25rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1600px) {
   .text_footer {
     margin: 0 auto;
     text-align: center;
@@ -507,7 +494,7 @@ swiper-slide img {
   margin-right: 31rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .text_oferta {
     margin-top: 5rem;
   }
@@ -526,8 +513,40 @@ swiper-slide img {
     top: -1rem;
   }
   swiper-container {
-    width: 90%;
+    width: 80%;
     height: 90%;
   }
 
+  .container-text {
+    position: relative;
+    top: 5%;
+    margin: auto;
+    text-align: center;
+  }
+
+  .container_text-host {
+    display: none;
+  }
 }
+
+@media (max-width: 1800px) {
+  .text_oferta {
+    margin-top: 15rem;
+  }
+
+  .text_oferta h1 {
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    top: -2rem;
+  }
+
+  .text_oferta p {
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    top: -1rem;
+  }
+}
+
+ 
