@@ -95,7 +95,7 @@ html {
 }
 
 .container-text h1 {
-  font-size: 4rem;
+  font-size: 6rem;
 }
 
 .container-text h2 {
@@ -519,7 +519,7 @@ swiper-slide img {
 
   .container-text {
     position: relative;
-    top: 5%;
+    top: 10%;
     margin: auto;
     text-align: center;
   }
