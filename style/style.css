@@ -3,6 +3,8 @@
 @import "tailwindcss/utilities";
 
 
+
+
 body {
   background-color: #282c34;
   font-family: 'Poppins', sans-serif;
@@ -1006,4 +1008,61 @@ textarea:focus {
         flex-direction: column;
         margin: auto;
       }
+    }
+
+    .container-time {
+      margin-left: 22rem;
+      margin-top: 10rem;
+      
+      
+    }
+
+    .bi-dash-circle-fill {
+      color: red; 
+      font-size: 1.5rem;
+    }
+  
+    .bi-check-circle-fill {
+      color: green; 
+      font-size: 1.5rem;
+    }
+
+    .text-time {
+      font-size: 18px;
+    }
+
+    .container-time p {
+      font-weight: 200;
+    font-size: 20px; 
+    }
+
+    @media screen and (max-width: 768px) {
+      .container-time {
+        margin-left: 0;
+        text-align: center;
+      }
+
+      .text-time {
+        text-align: center;
+      }
+    .border-line {
+      display: none;
+      
+
+    }
+    }
+
+    .border-line {
+      border-bottom: 1px solid #FBA81F;
+      width: 30%;
+      height: auto;
+      float: left;
+
+
+
+      
+    }
+
+    .box_1:hover, .box_2:hover, .box_3:hover, .box_4:hover {
+      transform: scale(1.02);
     }

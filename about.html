@@ -1,69 +1,79 @@
 <html>
-<head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
-  <link rel="stylesheet" href="style/about.css">
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-
-</head>
-<body>
-  <header>
-    <div class="header__content">
-      <div class="header__logo">
-        <a href="index.html">
-          <img src="https://cdn.discordapp.com/attachments/1100484541388435628/1102344094874882098/obraz_2023-04-30_232134258_preview_rev_1.png" alt="logo" class="logo" data-aos="zoom-in-right">
-        </a>
-      </div>
-      <nav class="header__nav">
-        <ul>
-          <li class="header__nav-item">
-            <span>Strona Główna</span>
-          </li>
-          <li class="header__nav-item">
-            <span>Współpraca</span>
-          <li class="header__nav-item">
-            <span>Portfolio</span>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  <div class="my-slider">
-    <div><img src="https://cdn.discordapp.com/attachments/1100484541388435628/1109891961474777108/obraz_2023-05-21_191350562.png">
-      <div class="container_slider-tekst">
-        <h1>test</h1>
-      </div>
-    </div>
-    <div><img src="https://cdn.discordapp.com/attachments/1100484541388435628/1109581474597969920/1525509761_410587.png">
-    </div>
-    <div><img src="https://cdn.discordapp.com/attachments/1100484541388435628/1109775747456970855/hL1XKZJB8GvI2X0qMipv1GFdr2mTXykq.png"></div>
-  </div>
-  <div class="container-slider-text">
- <div class="slider-text">
-  <h1>Masz pytania?</h1>
-  <p>NAPISZ DO NAS</p>
-  </div>
-  
-</div>
- </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      var slider = tns({
-        container: '.my-slider',
-        items: 1,
-        slideBy: 'page',
-        autoplay: true,
-        autoplayTimeout: 5000,
-        autoplayButtonOutput: false,
-        controls: false,
-        nav: false,
-        mouseDrag: true,
-        
+  <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  </head>
+  <body>
+ <script>
+  //Funkcja do sprawdzania dostępności stron
+function checkPages() {
+  //Tablica z adresami stron do sprawdzenia
+  let urls = ["https://panel.szablonyhost.eu/home", "https://ptero.szablonyhost.eu", "https://szablonyhost.eu"];
+  //Element div do wyświetlania wyników
+  let results = document.getElementById("results");
+  //Pętla po tablicy z adresami stron
+  for (let url of urls) {
+    //Wysyłanie żądania fetch do strony
+    fetch(url)
+      .then(response => {
+        //Sprawdzanie statusu odpowiedzi
+        if (response.status == 200) {
+          //Jeśli status jest 200, strona jest online
+          //Dodanie emoji z zielonym kółkiem i znakiem ✔️ przed stroną
+          results.innerHTML += "<span class='text'><i class='bi bi-check-circle-fill'></i> Strona " + url + " jest online.<br> </span>";
+        } else {
+          //Jeśli status jest inny, strona jest offline lub niedostępna
+          //Dodanie emoji z czerwonym kółkiem i znakiem ➖ przed stroną
+          results.innerHTML += "<span class='text'><i class='bi bi-dash-circle-fill'></i> Strona " + url + " jest offline.<br>  </span>";
+        }
+      })
+      .catch(error => {
+        //Jeśli wystąpi błąd, strona jest offline lub niedostępna
+        //Dodanie emoji z czerwonym kółkiem i znakiem ➖ przed stroną
+        results.innerHTML += "<span class='text'><i class='bi bi-dash-circle-fill'></i> Strona " + url + " jest offline.<br>   </span>";
       });
-    });
-  </script>
-</body>
+  }
+}
+
+//Funkcja do uruchomienia po załadowaniu strony
+window.onload = function() {
+  //Wywołanie funkcji checkPages
+  checkPages();
+}
+
+//Funkcja do uruchomienia po załadowaniu strony
+window.onload = function() {
+  //Wywołanie funkcji checkPages
+  checkPages();
+}
+ </script>
+<h1>Sprawdzanie dostępności stron</h1>
+<div id="results"></div>
+
+<style>
+  .bi-dash-circle-fill {
+    color: red; 
+    font-size: 1.5rem;
+  }
+
+  .bi-check-circle-fill {
+    color: green; 
+    font-size: 1.5rem;
+  }
+
+  .text {
+    font-size: 1.5rem;
+  }
+</style>
+    
+
+
+  </style>
+
+
+
+
+
+
+</style>    
+  </body>
 </html>
